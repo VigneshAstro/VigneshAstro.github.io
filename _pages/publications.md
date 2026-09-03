@@ -19,19 +19,19 @@ Publications are organized by review and authorship status, with the most recent
 
 <div class="publications">
 
-## Under review
+<h2>Under review</h2>
 
 {% bibliography --query @*[section=under_review] %}
 
-## First- and second-author publications
+<h2>First- and second-author publications</h2>
 
 {% bibliography --query @*[section=primary] %}
 
-## Research briefings
+<h2>Research briefings</h2>
 
 {% bibliography --query @*[section=briefing] %}
 
-## Nth-author publications
+<h2>Nth-author publications</h2>
 
 {% bibliography --query @*[section=coauthored] %}
 
