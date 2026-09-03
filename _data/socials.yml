@@ -1,9 +1,22 @@
-# this file contains the social media links and usernames of the author
-# the socials will be displayed in the order they are defined here
-# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: https://drive.google.com/file/d/1gIDg1XXFG-ckm5cmZ5JYwSy-B7y6ds00/view
-email: vignesh.krishnamurthy@astr.tohoku.ac.jp
-github_username: VigneshAstro
-linkedin_username: astrovignesh
-scholar_userid: 7xSicYwAAAAJ
-orcid_id: 0000-0003-2310-9415
+# Social links appear in this order on the About page. Custom entries let each
+# icon use a concise, reader-friendly hover label.
+email_me:
+  logo: fa-solid fa-envelope
+  title: Email me!
+  url: mailto:vignesh.krishnamurthy@astr.tohoku.ac.jp
+my_github:
+  logo: fa-brands fa-github
+  title: My GitHub
+  url: https://github.com/VigneshAstro
+my_linkedin:
+  logo: fa-brands fa-linkedin
+  title: My LinkedIn
+  url: https://www.linkedin.com/in/astrovignesh/
+my_google_scholar:
+  logo: ai ai-google-scholar
+  title: My Google Scholar
+  url: https://scholar.google.com/citations?user=7xSicYwAAAAJ
+my_orcid:
+  logo: ai ai-orcid
+  title: My ORCiD
+  url: https://orcid.org/0000-0003-2310-9415
