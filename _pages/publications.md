@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Publications on exoplanet atmospheres, planetary systems, astrobiology, and instrumentation.
 nav: true
 nav_order: 3

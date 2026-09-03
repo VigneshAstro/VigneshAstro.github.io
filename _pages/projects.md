@@ -1,6 +1,6 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
 description: Research on exoplanet atmospheres, astrobiology, temperate planets, and future observatories.
 nav: true

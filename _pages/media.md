@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /media/
-title: media
+title: Media
 description: Interviews, videos, press coverage, and public science writing.
 nav: true
 nav_order: 4

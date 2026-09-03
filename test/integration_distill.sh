@@ -3,12 +3,17 @@ set -euo pipefail
 
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
+tmp_demo_posts_override="${tmp_dir}/include-demo-posts.yml"
 tmp_site="${tmp_dir}/site"
 
 cleanup() {
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+# The production site intentionally excludes sample blog posts. Re-enable them
+# only for this theme integration check so the Distill fixture is available.
+ruby -rpsych -e "cfg = Psych.unsafe_load_file('_config.yml'); excludes = Array(cfg['exclude']).reject { |path| path == '_posts/' }; puts({ 'exclude' => excludes }.to_yaml)" >"${tmp_demo_posts_override}"
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
@@ -18,7 +23,7 @@ giscus:
   category_id: DIC_kwDOExample
 YAML
 
-bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
+bundle exec jekyll build --config "_config.yml,${tmp_demo_posts_override},${tmp_override}" -d "${tmp_site}" >/dev/null
 
 distill_page="${tmp_site}/blog/2021/distill/index.html"
 

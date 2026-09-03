@@ -8,10 +8,15 @@
 set -euo pipefail
 
 tmp_dir="$(mktemp -d)"
+tmp_demo_posts_override="${tmp_dir}/include-demo-posts.yml"
 cleanup() {
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+# The customized production site excludes the template's demo posts. These
+# plugin checks use the RTL and Marimo demos, so include them only for test builds.
+ruby -rpsych -e "cfg = Psych.unsafe_load_file('_config.yml'); excludes = Array(cfg['exclude']).reject { |path| path == '_posts/' }; puts({ 'exclude' => excludes }.to_yaml)" >"${tmp_demo_posts_override}"
 
 build() {
   local name="$1"
@@ -28,7 +33,7 @@ fail() {
 
 # --- al_rtl -----------------------------------------------------------------
 
-default_site="$(build default)"
+default_site="$(build default --config "_config.yml,${tmp_demo_posts_override}")"
 
 rtl_page="${default_site}/blog/2022/rtl/index.html"
 [ -f "${rtl_page}" ] || fail "RTL demo post was not built"
@@ -74,7 +79,7 @@ grep -q 'al_marimo' "${default_site}/index.html" && fail "home page wrongly load
 # everyone who copies this template.
 override="${tmp_dir}/protect-email.yml"
 printf 'protect_email: true\n' >"${override}"
-protected_site="$(build protected --config "_config.yml,${override}")"
+protected_site="$(build protected --config "_config.yml,${tmp_demo_posts_override},${override}")"
 
 # Scope note: this asserts the gating and the runtime, NOT that site-wide
 # addresses are obfuscated. `al_folio_core`'s metadata.liquid renders social
