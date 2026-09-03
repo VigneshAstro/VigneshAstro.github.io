@@ -13,13 +13,15 @@ description: Curriculum vitae of Vigneshwaran Krishnamurthy.
 </div>
 
 <object
-  data="/assets/pdf/Vigneshwaran_Krishnamurthy_CV.pdf"
-  type="application/pdf"
-  width="100%"
-  height="1050"
-  style="border: 1px solid var(--global-divider-color); border-radius: 0.5rem;"
-  aria-label="Curriculum vitae of Vigneshwaran Krishnamurthy"
+data="/assets/pdf/Vigneshwaran_Krishnamurthy_CV.pdf"
+type="application/pdf"
+width="100%"
+height="1050"
+style="border: 1px solid var(--global-divider-color); border-radius: 0.5rem;"
+aria-label="Curriculum vitae of Vigneshwaran Krishnamurthy"
+
 >
+
   <p>
     Your browser cannot display the PDF here.
     <a href="/assets/pdf/Vigneshwaran_Krishnamurthy_CV.pdf">Open the CV directly</a>.
