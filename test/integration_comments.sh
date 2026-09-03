@@ -3,12 +3,18 @@ set -euo pipefail
 
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/comments-test-override.yml"
+tmp_demo_posts_override="${tmp_dir}/include-demo-posts.yml"
 tmp_site="${tmp_dir}/site"
 
 cleanup() {
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+# This personal site excludes the template's sample posts from production. The
+# comments integration check still needs its two demo posts, so include them only
+# in this temporary test build.
+ruby -rpsych -e "cfg = Psych.unsafe_load_file('_config.yml'); excludes = Array(cfg['exclude']).reject { |path| path == '_posts/' }; puts({ 'exclude' => excludes }.to_yaml)" >"${tmp_demo_posts_override}"
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
@@ -18,7 +24,7 @@ giscus:
   category_id: DIC_kwDOExample
 YAML
 
-bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
+bundle exec jekyll build --config "_config.yml,${tmp_demo_posts_override},${tmp_override}" -d "${tmp_site}" >/dev/null
 
 giscus_page="${tmp_site}/blog/2022/giscus-comments/index.html"
 disqus_page="${tmp_site}/blog/2015/disqus-comments/index.html"

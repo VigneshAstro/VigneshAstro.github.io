@@ -1,0 +1,8 @@
+.about-contact-heading {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--global-divider-color);
+  margin-bottom: 0.9rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
