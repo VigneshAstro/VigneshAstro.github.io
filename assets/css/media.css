@@ -1,0 +1,32 @@
+.media-video-grid {
+  display: grid;
+  max-width: 920px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem;
+  margin: 1.5rem auto 2.75rem;
+}
+
+.media-video-grid > article {
+  min-width: 0;
+}
+
+.media-video-grid iframe,
+.media-video-feature iframe {
+  box-shadow: 0 0.4rem 1.4rem rgb(0 0 0 / 12%);
+}
+
+.media-video-feature {
+  width: min(100%, 446px);
+  margin: 1.5rem auto 2.75rem;
+}
+
+.media-video-feature > p {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .media-video-grid {
+    grid-template-columns: 1fr;
+    gap: 1.35rem;
+  }
+}
