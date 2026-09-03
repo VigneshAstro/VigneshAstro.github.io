@@ -3,11 +3,11 @@
 Research articles are ordinary Jekyll posts. Add a Markdown file to `_posts` using the filename pattern `YYYY-MM-DD-short-title.md` and one of the
 four topic categories below.
 
-| Research page | Category value |
-| --- | --- |
-| Escaping Atmospheres | `escaping-atmospheres` |
-| Astrobiology | `astrobiology` |
-| Temperate Planet Atmospheres | `temperate-planet-atmospheres` |
+| Research page                   | Category value                  |
+| ------------------------------- | ------------------------------- |
+| Escaping Atmospheres            | `escaping-atmospheres`          |
+| Astrobiology                    | `astrobiology`                  |
+| Temperate Planet Atmospheres    | `temperate-planet-atmospheres`  |
 | Future Telescopes & Instruments | `future-telescopes-instruments` |
 
 Start each file with front matter like this:
