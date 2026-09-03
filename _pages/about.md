@@ -4,13 +4,16 @@ title: about
 permalink: /
 subtitle: Specially Appointed Assistant Professor · <a href='https://www.astr.tohoku.ac.jp/'>Astronomical Institute, Tohoku University</a>
 
-profile: false
+profile:
+  align: right
+  image: profile-vignesh.webp
+  image_circular: false
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -20,7 +23,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an astronomer and aerospace engineer studying how exoplanet atmospheres form, evolve, and escape. My work combines **high- and low-resolution spectroscopy**, transit observations, and atmospheric modelling to connect present-day spectra with the physical histories of planets.
+I am an astronomer and aerospace engineer studying how exoplanet atmospheres evolve and escape. My work combines **high- and low-resolution spectroscopy** with transit observations to trace escaping atmospheres, measure their extent and dynamics, and connect present-day spectra with the physical evolution of planets.
 
 At Tohoku University, my research focuses on **atmospheric escape**, **young planetary systems**, **planetary-system architecture**, and the effects of stellar activity on atmospheric measurements. I work with observations from facilities including JWST, Subaru/IRD, NIRPS, TESS, and ground-based follow-up telescopes.
 
@@ -30,4 +33,6 @@ My current research includes mapping the extended helium tails of evaporating pl
 
 Explore my [research](/research/), browse my [publications](/publications/), or download my [CV](https://drive.google.com/file/d/1gIDg1XXFG-ckm5cmZ5JYwSy-B7y6ds00/view).
 
-**Contact:** S505, Science Complex C, Astronomical Institute, Tohoku University, Sendai, Japan · vignesh.krishnamurthy@astr.tohoku.ac.jp
+**Address:** [S505, Science Complex C, Astronomical Institute, Tohoku University, Sendai, Japan](https://www.google.com/maps/search/?api=1&query=Astronomical+Institute%2C+Tohoku+University%2C+Sendai%2C+Japan)
+
+**Email:** vignesh.krishnamurthy@astr.tohoku.ac.jp

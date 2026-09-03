@@ -7,11 +7,13 @@ nav: true
 nav_order: 4
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/media.css' | relative_url }}">
+
 I regularly contribute interviews and science commentary in English and Tamil, helping make astronomy and space research accessible to a wider audience.
 
 ## Interviews and videos
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 1.5rem; margin: 1.5rem 0 2.5rem;">
+<div class="media-video-grid">
   <article>
     <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 0.5rem;">
       <iframe
@@ -98,7 +100,7 @@ July–October 2024
 - **Trottier Institute for Research on Exoplanets:** [Discovery of an Earth-like exoplanet in the habitable zone — interview](https://exoplanetes.umontreal.ca/en/discovery-of-an-earth-like-exoplanet-in-the-habitable-zone-interview-with-vigneshwaran-krishnamurthy/)
 - **McGill University:** [Discovery of a new Earth-like planet could shed light on habitability](https://www.mcgill.ca/newsroom/channels/news/expert-discovery-new-earth-planet-could-shed-light-what-makes-planet-habitable-358213)
 
-<div style="max-width: 720px; margin: 1.25rem 0 2.5rem;">
+<div class="media-video-feature">
   <div style="position: relative; width: 100%; padding-bottom: 56.25%; overflow: hidden; border-radius: 0.5rem;">
     <iframe
       src="https://www.youtube-nocookie.com/embed/AXB-5W64Iac"

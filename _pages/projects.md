@@ -17,8 +17,8 @@ nav_order: 2
 <div class="research-topic-grid">
   <a class="research-topic-card" href="{{ '/research/escaping-atmospheres/' | relative_url }}">
     <img
-      src="{{ '/assets/img/research/escaping-atmospheres.webp' | relative_url }}"
-      alt="An exoplanet losing an extended atmosphere as it transits its star"
+      src="{{ '/assets/img/research/wasp-107b-artist-angel.jpg' | relative_url }}"
+      alt="Artist's impression of helium escaping from WASP-107 b"
       loading="eager"
     >
     <div class="research-topic-card__body">
@@ -59,8 +59,8 @@ nav_order: 2
 
   <a class="research-topic-card" href="{{ '/research/future-telescopes-instruments/' | relative_url }}">
     <img
-      src="{{ '/assets/img/research/future-telescopes.webp' | relative_url }}"
-      alt="A future segmented space telescope observing a distant planetary system"
+      src="{{ '/assets/img/research/nasa-exoplanet-missions.jpg' | relative_url }}"
+      alt="NASA graphic showing past, present, and future exoplanet missions"
       loading="lazy"
     >
     <div class="research-topic-card__body">

@@ -21,13 +21,28 @@ topic: temperate-planet-atmospheres
 
 <p class="research-topic-intro">
   Nearby M dwarfs offer some of the best opportunities to study small, cool planets. I investigate what observations can reveal about their
-  atmospheres—from constraints on primordial hydrogen and helium to the prospects for characterizing temperate terrestrial worlds.
+  atmospheres - from constraints on primordial hydrogen and helium to the prospects for characterizing temperate terrestrial worlds.
 </p>
 
-<h2 class="research-archive-heading">Articles &amp; paper notes</h2>
+<h2 class="research-archive-heading">Current work</h2>
+
+<div class="research-feature-list">
+  <article class="research-feature research-feature--status">
+    <div class="research-feature__copy">
+      <time datetime="2026">Ongoing</time>
+      <h3>JWST studies of temperate planetary atmospheres</h3>
+      <p>
+        New JWST studies are underway. These observations are designed to test what atmospheres small, temperate planets can retain and how
+        stellar activity and surface-atmosphere interactions influence the spectra we measure. Stay tuned for interesting results.
+      </p>
+    </div>
+  </article>
+</div>
 
 {% assign research_posts = site.posts | where_exp: "post", "post.categories contains page.topic" | sort: "date" | reverse %}
 {% if research_posts.size > 0 %}
+
+  <h2 class="research-archive-heading research-archive-heading--secondary">Articles &amp; paper notes</h2>
   <div class="research-article-list">
     {% for post in research_posts %}
       <article class="research-article-card">
@@ -39,7 +54,4 @@ topic: temperate-planet-atmospheres
     {% endfor %}
   </div>
 {% else %}
-  <div class="research-empty-state">
-    <p>Articles and paper notes will appear here, with the newest first.</p>
-  </div>
 {% endif %}
