@@ -51,12 +51,20 @@ topic: escaping-atmospheres
       </div>
     </div>
     <figure class="research-feature__visual research-feature__visual--dark">
-      <img
-        src="{{ '/assets/img/research/wasp-107b-helium-eve.png' | relative_url }}"
-        alt="EvE simulation of WASP-107 b's helium outflow above the observed helium light curve"
-        loading="lazy"
+      <video
+        class="research-feature__video"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        poster="{{ '/assets/img/research/wasp-107b-helium-eve.png' | relative_url }}"
+        aria-label="Animated EvE simulation of WASP-107 b's helium outflow above the observed helium light curve"
       >
-      <figcaption>EvE model of the extended outflow and the corresponding helium light curve.</figcaption>
+        <source src="{{ '/assets/video/wasp-107b-helium-eve.mp4' | relative_url }}" type="video/mp4">
+        Your browser does not support embedded MP4 video.
+      </video>
+      <figcaption>Looping EvE model of the extended outflow and the corresponding helium light curve.</figcaption>
     </figure>
   </article>
 
