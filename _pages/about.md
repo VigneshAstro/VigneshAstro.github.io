@@ -2,41 +2,117 @@
 layout: about
 title: About
 permalink: /
-subtitle: Specially Appointed Assistant Professor · <a href='https://www.astr.tohoku.ac.jp/'>Astronomical Institute, Tohoku University</a>
-
-profile:
-  align: right
-  image: profile-vignesh.webp
-  image_circular: false
-
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
+selected_papers: false
+social: false
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
+  enabled: false
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}">
 
-I am an astronomer and aerospace engineer studying how exoplanet atmospheres evolve and escape. My work combines **high- and low-resolution spectroscopy** with transit observations to trace escaping atmospheres, measure their extent and dynamics, and connect present-day spectra with the physical evolution of planets.
+<div class="about-academic">
+  <aside class="about-academic__profile" aria-label="Portrait and contact information">
+    <img
+      class="about-academic__portrait"
+      src="{{ '/assets/img/profile-vignesh-cropped.jpg' | relative_url }}"
+      alt="Vigneshwaran Krishnamurthy"
+      width="564"
+      height="666"
+      loading="eager"
+      fetchpriority="high"
+    >
+    <div class="about-academic__social" aria-label="Social links">{% social_links %}</div>
+    <section class="about-academic__contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact me</h2>
+      <p>
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <a href="https://www.google.com/maps/search/?api=1&query=Astronomical+Institute%2C+Tohoku+University%2C+Sendai%2C+Japan">
+          S505, Science Complex C<br>
+          Astronomical Institute<br>
+          Tohoku University, Sendai, Japan
+        </a>
+      </p>
+      <p>
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <a href="mailto:vignesh.krishnamurthy@astr.tohoku.ac.jp" title="Email me!">vignesh.krishnamurthy@astr.tohoku.ac.jp</a>
+      </p>
+    </section>
+  </aside>
 
-At Tohoku University, my research focuses on **atmospheric escape**, **young planetary systems**, **planetary-system architecture**, and the effects of stellar activity on atmospheric measurements. I work with observations from facilities including JWST, Subaru/IRD, NIRPS, TESS, and ground-based follow-up telescopes.
+  <div class="about-academic__main">
+    <header>
+      <h1>Vigneshwaran Krishnamurthy</h1>
+      <p class="about-academic__position">
+        Specially Appointed Assistant Professor ·
+        <a href="https://www.astr.tohoku.ac.jp/">Astronomical Institute, Tohoku University</a>
+      </p>
+    </header>
+    <div class="about-academic__intro">
+      <p>
+        I am an astronomer and aerospace engineer exploring how exoplanet atmospheres evolve and escape. I use
+        <strong>high- and low-resolution spectroscopy</strong> to trace escaping gas, probe atmospheric structure,
+        and understand the diversity of distant worlds.
+      </p>
+      <p>
+        My research spans <strong>atmospheric escape</strong>, young and temperate planets, and astrobiology,
+        using observations from JWST and ground-based telescopes. I also work on the science opportunities
+        offered by future observatories.
+      </p>
+    </div>
 
-Before joining Tohoku, I was a postdoctoral researcher at the Trottier Space Institute at McGill University and a project researcher at the Astrobiology Center in Japan. I completed my doctoral research in exoplanet science at the Tokyo Institute of Technology and hold master's and bachelor's degrees in aerospace engineering.
+    <div class="about-academic__details">
+      <section aria-labelledby="interests-heading">
+        <h2 id="interests-heading">Interests</h2>
+        <ul class="about-academic__interests">
+          <li>Atmospheric escape &amp; evolution</li>
+          <li>High-resolution spectroscopy</li>
+          <li>Young &amp; temperate planets</li>
+          <li>Planetary-system architecture</li>
+          <li>Astrobiology &amp; habitability</li>
+          <li>Future telescopes &amp; instruments</li>
+        </ul>
+      </section>
 
-My current research includes mapping the extended helium tails of evaporating planets, testing atmospheric-loss scenarios across the radius gap, characterizing young planets, and measuring planet masses through transit-timing variations.
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Work &amp; Education</h2>
+        <h3>Academic appointments</h3>
+        <ul class="about-academic__timeline">
+          <li>
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            <div><strong>Specially Appointed Assistant Professor</strong><span>Tohoku University</span><small>June 2026–present</small></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            <div><strong>Visiting Researcher</strong><span>Astrobiology Center, NINS</span><small>January–April 2026</small></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            <div><strong>Postdoctoral Researcher</strong><span>Trottier Space Institute, McGill University</span><small>November 2022–April 2026</small></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            <div><strong>Project Research Staff</strong><span>Astrobiology Center, NINS</span><small>October 2021–September 2022</small></div>
+          </li>
+        </ul>
+        <h3>Education</h3>
+        <ul class="about-academic__timeline">
+          <li>
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <div><strong>Doctoral research in Exoplanet Science</strong><span>Tokyo Institute of Technology</span><small>2021</small></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <div><strong>Master’s in Aerospace Engineering</strong><span>Indian Institute of Technology Kanpur</span><small>2017</small></div>
+          </li>
+          <li>
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <div><strong>Bachelor’s in Aerospace Engineering</strong><span>Amrita Vishwa Vidyapeetham</span><small>2015</small></div>
+          </li>
+        </ul>
+      </section>
+    </div>
 
-Explore my [research](/research/) and browse my [publications](/publications/).
-
-<h2 class="about-contact-heading">Contact me</h2>
-
-**Address:** [S505, Science Complex C, Astronomical Institute, Tohoku University, Sendai, Japan](https://www.google.com/maps/search/?api=1&query=Astronomical+Institute%2C+Tohoku+University%2C+Sendai%2C+Japan)
-
-**Email:** [vignesh.krishnamurthy@astr.tohoku.ac.jp](mailto:vignesh.krishnamurthy@astr.tohoku.ac.jp)
+  </div>
+</div>
