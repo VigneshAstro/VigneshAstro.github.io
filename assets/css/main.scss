@@ -1,0 +1,37 @@
+---
+# Keep the core stylesheet imports; site-specific accent tokens follow below.
+---
+
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Muted walnut accents on light surfaces.
+:root {
+  --global-theme-color: #795b43;
+  --global-hover-color: #624832;
+  --global-hover-text-color: #ffffff;
+}
+
+// Soft green accents on dark surfaces, with dark text on filled buttons.
+html[data-theme="dark"] {
+  --global-theme-color: #8fbc9b;
+  --global-hover-color: #a0c7aa;
+  --global-hover-text-color: #17251c;
+}
