@@ -30,7 +30,7 @@ topic: astrobiology
 <div class="research-feature-list">
   <article class="research-feature research-feature--article">
     <div class="research-feature__copy">
-      <time datetime="2026-09">September 2026 · Under review in <i>Astrobiology</i></time>
+      <time datetime="2026-09">September 2026 · Under review in <i>Acta Astronautica</i></time>
       <h3>
         <a href="https://arxiv.org/search/?query=Energetic+Decoupling+from+Biological+Scaling&amp;searchtype=title">
           Energetic Decoupling from Biological Scaling: A Dimensionless Framework for Technological Civilizations

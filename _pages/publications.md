@@ -9,7 +9,7 @@ nav_order: 3
 
 <!-- _pages/publications.md -->
 
-Publications are organized by review and authorship status, with the most recent work first in each section. Links to NASA ADS, arXiv, and the DOI or publisher page appear below each citation. For a continuously updated record, see
+Only first-author manuscripts appear under review. Other manuscripts under review appear in the nth-author section. Publications are organized by review and authorship status, with the most recent work first in each section. Links to NASA ADS, arXiv, and the DOI or publisher page appear below each citation. For a continuously updated record, see
 [NASA ADS](https://ui.adsabs.harvard.edu/search/q=author%3A%22Krishnamurthy%2C%20Vigneshwaran%22&sort=date%20desc%2C%20bibcode%20desc&p_=0) or
 [Google Scholar](https://scholar.google.com/citations?user=7xSicYwAAAAJ).
 
