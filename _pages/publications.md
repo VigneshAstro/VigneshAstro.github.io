@@ -61,6 +61,9 @@ Only first-author manuscripts appear under review. Other manuscripts under revie
 
         links.querySelectorAll("a").forEach((link) => {
           if (link.href.includes("ui.adsabs.harvard.edu")) link.textContent = "NASA ADS";
+          if (link.href.startsWith("http://arxiv.org/")) {
+            link.href = link.href.replace("http://arxiv.org/", "https://arxiv.org/");
+          }
         });
 
         const linkOrder = { "NASA ADS": 0, arXiv: 1, DOI: 2, HTML: 3 };
