@@ -45,22 +45,6 @@ Updated **24 November 2026**. Publications are organized by publication type and
 
 </div>
 
-## Recent conference presentation
-
-**[The 70th NIBB Conference / ABC International Symposium](https://nibb-abc-conf70.nibb.ac.jp/home)**<br>
-_Bridging Astronomy and Biology: Spectral Footprints of Life Beyond Earth_<br>
-**Energetic Decoupling from Biological Scaling: A Dimensionless Framework for Technological Civilizations**<br>
-Vigneshwaran Krishnamurthy · Oral presentation · Okazaki, Japan · 11 November 2026
-
-The complete list of conference presentations and invited talks is included in the downloadable publication lists and [CV](/cv/).
-
-## Download publications and presentations
-
-| Color scheme    | PDF                                                      | LaTeX source                                               |
-| :-------------- | :------------------------------------------------------- | :--------------------------------------------------------- |
-| Blue            | [PDF](/assets/pdf/publications_blue_24nov2026.pdf)       | [LaTeX](/assets/tex/publications_blue_24nov2026.tex)       |
-| Brown and green | [PDF](/assets/pdf/publications_greenbrown_24nov2026.pdf) | [LaTeX](/assets/tex/publications_greenbrown_24nov2026.tex) |
-
 <script>
   (() => {
     const formatPublications = () => {
