@@ -35,6 +35,10 @@ Updated **24 November 2026**. Publications are organized by publication type and
 
 {% bibliography --query @*[section=coauthored] %}
 
+<h2 style="font-size: 1.65rem; font-weight: 700; margin-top: 2.5rem;">Instrumentation reports</h2>
+
+{% bibliography --query @*[section=instrumentation] %}
+
 <h2 style="font-size: 1.65rem; font-weight: 700; margin-top: 2.5rem;">Conference proceedings</h2>
 
 {% bibliography --query @*[section=proceedings] %}
