@@ -1,4 +1,228 @@
 metadata:
-  last_updated: null
+  last_updated: '2026-11-24'
   scholar_user_id: 7xSicYwAAAAJ
-papers: {}
+papers:
+  7xSicYwAAAAJ:0EnyYjriUFMC:
+    citations: 0
+    title: 'TOI-2136b: a sub-Neptune planet around a nearby M3 dwarf'
+    year: '2022'
+  7xSicYwAAAAJ:2osOgNQ5qMEC:
+    citations: 0
+    title: DSMC solver for an optimized Space Crew reentry Orbital Vehicle
+    year: '2016'
+  7xSicYwAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: 'VizieR Online Data Catalog: LP 890-9 (TOI-4306) light curves and RVs (Delrez+, 2022)'
+    year: '2022'
+  7xSicYwAAAAJ:4JMBOYKVnBMC:
+    citations: 12
+    title: 'NIRPS and TESS reveal a peculiar system around the M dwarf TOI-756: A transiting sub-Neptune and a cold eccentric giant'
+    year: '2025'
+  7xSicYwAAAAJ:4TOpqqG69KYC:
+    citations: 0
+    title: 'Atmospheres of low-mass star planets: A tale of evolution'
+    year: '2021'
+  7xSicYwAAAAJ:5nxA0vEk-isC:
+    citations: 0
+    title: 'NIR observation of TOI-1235b, GJ 9827b and GJ 9827d: Absence of extended atmosphere in the radius-gap planets'
+    year: '2022'
+  7xSicYwAAAAJ:7PzlFSSx8tAC:
+    citations: 6
+    title: 'The mass of TOI-654 b: A short-period sub-Neptune transiting a mid-M dwarf'
+    year: '2025'
+  7xSicYwAAAAJ:8k81kl-MbHgC:
+    citations: 17
+    title: Validation and atmospheric exploration of the sub-Neptune TOI-2136b around a nearby M3 dwarf
+    year: '2022'
+  7xSicYwAAAAJ:9ZlFYXVOiuMC:
+    citations: 0
+    title: IRD and HPF spectra of TRAPPIST-1b, e and f
+    year: '2021'
+  7xSicYwAAAAJ:BqipwSGYUEgC:
+    citations: 0
+    title: 'Night-sky emission correction techniques for high-resolution spectroscopy: Demonstration with NIRPS'
+    year: '2026'
+  7xSicYwAAAAJ:HDshCWvjkbEC:
+    citations: 11
+    title: Quantifying thermal water dissociation in the dayside photosphere of WASP-121 b using NIRPS
+    year: '2025'
+  7xSicYwAAAAJ:IWHjjKOFINEC:
+    citations: 62
+    title: 'NIRPS joining HARPS at ESO 3.6 m: on-sky performance and science objectives'
+    year: '2025'
+  7xSicYwAAAAJ:IjCSPb-OGe4C:
+    citations: 36
+    title: "Zodiacal exoplanets in time\u2013XI. The orbit and radiation environment of the young M dwarf-hosted planet K2-25b"
+    year: '2020'
+  7xSicYwAAAAJ:JV2RwH3_ST0C:
+    citations: 1
+    title: 'Parametrizing the projected wind fields of ultra-hot Jupiters in thermal emission: An application to GCM spectra of WASP-76b'
+    year: '2026'
+  7xSicYwAAAAJ:KlAtU1dfN6UC:
+    citations: 10
+    title: An Earth-sized Planet around an M5 Dwarf Star at 22 pc
+    year: '2023'
+  7xSicYwAAAAJ:L8Ckcad2t8MC:
+    citations: 22
+    title: NIRPS detection of delayed atmospheric escape from the warm and misaligned Saturn-mass exoplanet WASP-69 b
+    year: '2025'
+  7xSicYwAAAAJ:LkGwnXOMwfcC:
+    citations: 1
+    title: 'Toi-1442 b and toi-2445 b: two ultra-short period superearths around m dwarfs'
+    year: '2022'
+  7xSicYwAAAAJ:M3NEmzRMIkIC:
+    citations: 4
+    title: 'The breaking of cold traps and onset of titanium in ultra-hot Jupiter atmospheres: WASP-189b in context'
+    year: '2026'
+  7xSicYwAAAAJ:MXK_kJrjxJIC:
+    citations: 88
+    title: Two temperate super-Earths transiting a nearby late-type M dwarf
+    year: '2022'
+  7xSicYwAAAAJ:NMxIlDl6LWMC:
+    citations: 0
+    title: 'Beyond Five Scale Heights: Composition-and Cloud-dependent Ariel Tier-2 Requirements for sub-Neptunes'
+    year: '2026'
+  7xSicYwAAAAJ:O3NaXMp0MMsC:
+    citations: 0
+    title: Near-Infrared High-resolution Spectroscopy for a Very Young Hot Jupiter
+    year: '2026'
+  7xSicYwAAAAJ:R3hNpaxXUhUC:
+    citations: 0
+    title: 'VizieR Online Data Catalog: Proxima+ Gl581 activity-sensitive lines (Gomes da Silva+, 2025)'
+    year: '2025'
+  7xSicYwAAAAJ:RHpTSmoSYBkC:
+    citations: 25
+    title: A complex structure of escaping helium spanning more than half the orbit of the ultra-hot Jupiter WASP-121 b
+    year: '2025'
+  7xSicYwAAAAJ:TQgYirikUcIC:
+    citations: 0
+    title: 'VizieR Online Data Catalog: Proxima spectroscopy and photometry (Suarez Mascareno+, 2025)'
+    year: '2025'
+  7xSicYwAAAAJ:Tyk-4Ss8FVUC:
+    citations: 0
+    title: Observations of Spectroscopic Transits for the TRAPPIST-1 System with High-resolution Near-Infrared Spectroscopy
+    year: '2021'
+  7xSicYwAAAAJ:UeHWp8X0CEIC:
+    citations: 54
+    title: "Limits on the Spin\u2013Orbit Angle and Atmospheric Escape for the 22 Myr Old Planet AU Mic b"
+    year: '2020'
+  7xSicYwAAAAJ:UebtZRa9Y70C:
+    citations: 28
+    title: A super-Earth orbiting near the inner edge of the habitable zone around the M4. 5 dwarf Ross 508
+    year: '2022'
+  7xSicYwAAAAJ:WF5omc3nYNoC:
+    citations: 0
+    title: 'VizieR Online Data Catalog: IRD and HPF spectra of TRAPPIST-1b, e and f (Krishnamurthy+, 2021)'
+    year: '2021'
+  7xSicYwAAAAJ:Wp0gIr-vW9MC:
+    citations: 0
+    title: 'NIRPS near-infrared spectrograph: AITV phase at ESO3. 6m/La Silla'
+    year: '2024'
+  7xSicYwAAAAJ:YFjsv_pBGBYC:
+    citations: 0
+    title: Radial velocity detection of the TRAPPIST-1 planetary system with SPIRou and NIRPS
+    year: '2026'
+  7xSicYwAAAAJ:YOwf2qJgpHMC:
+    citations: 15
+    title: 'TOI-1442 b and TOI-2445 b: Two potentially rocky ultra-short period planets around M dwarfs'
+    year: '2023'
+  7xSicYwAAAAJ:YsMSGLbcyi4C:
+    citations: 37
+    title: Nondetection of Helium in the Upper Atmospheres of TRAPPIST-1b, e, and f
+    year: '2021'
+  7xSicYwAAAAJ:ZeXyd9-uunAC:
+    citations: 17
+    title: Hydride ion continuum hides absorption signatures in the NIRPS near-infrared transmission spectrum of the ultra-hot gas giant WASP-189b
+    year: '2025'
+  7xSicYwAAAAJ:Zph67rFs4hoC:
+    citations: 20
+    title: Absence of extended atmospheres in low-mass star radius-gap planets
+    year: '2023'
+  7xSicYwAAAAJ:_Qo2XoVZTnwC:
+    citations: 5
+    title: 'Sibling sub-Neptunes around sibling M dwarfs: TOI-521 and TOI-912'
+    year: '2026'
+  7xSicYwAAAAJ:_kc_bZDykSQC:
+    citations: 31
+    title: 'The mass of TOI-519 b: A close-in giant planet transiting a metal-rich mid-M dwarf'
+    year: '2023'
+  7xSicYwAAAAJ:aqlVkmm33-oC:
+    citations: 32
+    title: 'NIRPS first light and early science: breaking the 1 m/s RV precision barrier at infrared wavelengths'
+    year: '2024'
+  7xSicYwAAAAJ:bEWYMUwI8FkC:
+    citations: 4
+    title: NIRPS tightens the mass estimate of GJ 3090 b and detects a planet near the stellar rotation period
+    year: '2026'
+  7xSicYwAAAAJ:blknAaTinKkC:
+    citations: 0
+    title: Research briefing
+    year: '2026'
+  7xSicYwAAAAJ:e5wmG9Sq2KIC:
+    citations: 24
+    title: Precise constraints on the energy budget of WASP-121 b from its JWST NIRISS/SOSS phase curve
+    year: '2025'
+  7xSicYwAAAAJ:eQOLeE2rZwMC:
+    citations: 0
+    title: High-resolution NIR observations of TRAPPIST-1b, e and f
+    year: '2021'
+  7xSicYwAAAAJ:hC7cP41nSMkC:
+    citations: 8
+    title: Blind search for activity-sensitive lines in the near-infrared using HARPS and NIRPS observations of Proxima and Gl 581
+    year: '2025'
+  7xSicYwAAAAJ:hMod-77fHWUC:
+    citations: 0
+    title: A search for helium in the atmospheres of three sub-Neptunes and a super-Earth around M-dwarfs
+    year: '2026'
+  7xSicYwAAAAJ:hqOjcs7Dif8C:
+    citations: 24
+    title: "TOI-1696: A Nearby M4 Dwarf with a 3 R \u2295 Planet in the Neptunian Desert"
+    year: '2022'
+  7xSicYwAAAAJ:iH-uZ7U-co4C:
+    citations: 0
+    title: JWST tracks helium escape from the atmosphere of the exoplanet WASP-107 b
+    year: '2025'
+  7xSicYwAAAAJ:isC4tDSrTZIC:
+    citations: 0
+    title: 'VizieR Online Data Catalog: TOI-521 and TOI-912 RV datasets (Lacedelli+, 2026)'
+    year: '2025'
+  7xSicYwAAAAJ:j3f4tGmQtD8C:
+    citations: 21
+    title: Continuous helium absorption from both the leading and trailing tails of WASP-107 b
+    year: '2026'
+  7xSicYwAAAAJ:k_IJM867U9cC:
+    citations: 11
+    title: Super-Earth masses and stellar abundances from NIRPS reveal tentative evidence for water-rich formation around M dwarfs
+    year: '2026'
+  7xSicYwAAAAJ:mB3voiENLucC:
+    citations: 0
+    title: 'TRAPPIST-1 in High Resolution: Constraining Exoplanet Atmospheres Amid Systematics'
+    year: '2025'
+  7xSicYwAAAAJ:mVmsd5A6BfQC:
+    citations: 20
+    title: 'Helium in Exoplanet Exospheres: Orbital and Stellar Influences'
+    year: '2024'
+  7xSicYwAAAAJ:maZDTaKrznsC:
+    citations: 0
+    title: 'The mass of TOI-1883 b: A low-density super-Neptune in the ridge regime transiting an early-M dwarf'
+    year: '2026'
+  7xSicYwAAAAJ:qUcmZB5y_30C:
+    citations: 41
+    title: 'Diving into the planetary system of Proxima with NIRPS: Breaking the metre per second barrier in the infrared'
+    year: '2025'
+  7xSicYwAAAAJ:qxL8FJ1GzNcC:
+    citations: 38
+    title: 'Gliese 12 b: A temperate Earth-sized planet at 12 pc ideal for atmospheric transmission spectroscopy'
+    year: '2024'
+  7xSicYwAAAAJ:r0BpntZqJG4C:
+    citations: 2
+    title: 'NIRPS Joins HARPS: Setting New Standards at Infrared Wavelengths'
+    year: '2025'
+  7xSicYwAAAAJ:u-x6o8ySG0sC:
+    citations: 0
+    title: Concept of sustainable habitat on Mars
+    year: '2018'
+  7xSicYwAAAAJ:u5HHmVD_uO8C:
+    citations: 6
+    title: Computational study of the aerodynamics of the gliding snake Chrysopelea Paradisi
+    year: '2015'
