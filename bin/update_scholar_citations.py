@@ -4,6 +4,7 @@ import os
 import sys
 import yaml
 from datetime import datetime
+from urllib.parse import parse_qs, urlparse
 from scholarly import scholarly
 
 
@@ -17,11 +18,15 @@ def load_scholar_user_id() -> str:
         sys.exit(1)
     try:
         with open(config_file, "r") as f:
-            config = yaml.safe_load(f)
+            config = yaml.safe_load(f) or {}
         scholar_user_id = config.get("scholar_userid")
         if not scholar_user_id:
+            # Custom social links are used by this site to control icon order.
+            profile_url = config.get("my_google_scholar", {}).get("url", "")
+            scholar_user_id = parse_qs(urlparse(profile_url).query).get("user", [None])[0]
+        if not scholar_user_id:
             print(
-                "No 'scholar_userid' found in the configuration file. Please add 'scholar_userid' to _data/socials.yml."
+                "No Google Scholar ID found in _data/socials.yml. Set scholar_userid or the user parameter in my_google_scholar.url."
             )
             sys.exit(1)
         return scholar_user_id
@@ -40,6 +45,7 @@ def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
     print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
     today = datetime.now().strftime("%Y-%m-%d")
+    existing_data = {}
 
     # Check if the output file was already updated today
     if os.path.exists(OUTPUT_FILE):
@@ -49,6 +55,7 @@ def get_scholar_citations() -> None:
             if (
                 existing_data
                 and "metadata" in existing_data
+                and existing_data["metadata"].get("scholar_user_id") == SCHOLAR_USER_ID
                 and "last_updated" in existing_data["metadata"]
             ):
                 print(f"Last updated on: {existing_data['metadata']['last_updated']}")
@@ -60,7 +67,10 @@ def get_scholar_citations() -> None:
                 f"Warning: Could not read existing citation data from {OUTPUT_FILE}: {e}. The file may be missing or corrupted."
             )
 
-    citation_data = {"metadata": {"last_updated": today}, "papers": {}}
+    citation_data = {
+        "metadata": {"last_updated": today, "scholar_user_id": SCHOLAR_USER_ID},
+        "papers": {},
+    }
 
     scholarly.set_timeout(15)
     scholarly.set_retries(3)
@@ -85,7 +95,7 @@ def get_scholar_citations() -> None:
 
     for pub in author_data["publications"]:
         try:
-            pub_id = pub.get("pub_id") or pub.get("author_pub_id")
+            pub_id = pub.get("author_pub_id") or pub.get("pub_id")
             if not pub_id:
                 print(
                     f"Warning: No ID found for publication: {pub.get('bib', {}).get('title', 'Unknown')}. This publication will be skipped."
@@ -108,14 +118,23 @@ def get_scholar_citations() -> None:
                 f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
             )
 
-    # Compare new data with existing data
-    if existing_data and existing_data.get("papers") == citation_data["papers"]:
+    if not citation_data["papers"]:
+        print("No usable publications returned. Keeping the existing citation file.")
+        sys.exit(1)
+
+    # Compare data only when the cache belongs to the same Scholar profile.
+    if (
+        existing_data
+        and existing_data.get("metadata", {}).get("scholar_user_id") == SCHOLAR_USER_ID
+        and existing_data.get("papers") == citation_data["papers"]
+    ):
         print("No changes in citation data. Skipping file update.")
         return
 
     try:
-        with open(OUTPUT_FILE, "w") as f:
+        with open(OUTPUT_FILE + ".tmp", "w") as f:
             yaml.dump(citation_data, f, width=1000, sort_keys=True)
+        os.replace(OUTPUT_FILE + ".tmp", OUTPUT_FILE)
         print(f"Citation data saved to {OUTPUT_FILE}")
     except Exception as e:
         print(

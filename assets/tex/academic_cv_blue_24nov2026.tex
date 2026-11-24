@@ -1,0 +1,1497 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=1.55cm,top=1.4cm,bottom=1.55cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{needspace}
+
+
+% ===============================================================
+% ===============================================================
+% ===============================================================
+\definecolor{navy}{HTML}{173B57}
+\definecolor{teal}{HTML}{267D83}
+\definecolor{slate}{HTML}{4B5964}
+\definecolor{rulegray}{HTML}{CBD3D8}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=navy,pdfauthor={Vigneshwaran Krishnamurthy},pdftitle={Curriculum Vitae -- Vigneshwaran Krishnamurthy}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\emergencystretch=1em
+\clubpenalty=10000
+\widowpenalty=10000
+\pretocmd{\section}{\Needspace{6\baselineskip}}{}{}
+\setlist[itemize]{leftmargin=1.25em,itemsep=1.5pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\large\sffamily\bfseries\color{navy}}{}{0pt}{}[\color{rulegray}\titlerule]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[L]{\sffamily\small\color{slate}Vigneshwaran Krishnamurthy}
+%\fancyhead[R]{\sffamily\small\color{slate}Curriculum Vitae}
+%\fancyfoot[C]{\sffamily\scriptsize\color{slate}\thepage\ / \pageref*{LastPage}}
+%\renewcommand{\headrulewidth}{0.3pt}
+
+% ===============================================================
+% ===============================================================
+% ===============================================================
+
+\newcommand{\cventry}[5]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedleft\arraybackslash}p{2.55cm}@{\hspace{0.55cm}}X@{}}
+  \sffamily\small\color{slate}#1 & \textbf{#2}\\
+  & \emph{#3}\if\relax\detokenize{#4}\relax\else, #4\fi\\
+  & #5
+  \end{tabularx}\par\vspace{3pt}}
+
+% Lighter color for presentation titles, hosts, and dates
+\definecolor{entrylight}{HTML}{6F7F8C}
+
+% Presentation entry:
+% #1 Conference and presentation type
+% #2 Location
+% #3 Presentation title
+% #4 Date
+\newcommand{\presentationentry}[4]{%
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}X
+    >{\raggedleft\arraybackslash}p{4.0cm}
+    @{}
+}
+#1 & #2 \\
+\textcolor{entrylight}{#3} &
+\textcolor{entrylight}{\emph{#4}}
+\end{tabularx}
+\vspace{2pt}
+}
+
+% ===============================================================
+
+% Invited-talk entry:
+% #1 Institution or laboratory
+% #2 Location
+% #3 Host
+% #4 Date
+\newcommand{\invitedtalkentry}[4]{%
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}X
+    >{\raggedleft\arraybackslash}p{4.5cm}
+    @{}
+}
+#1 & #2 \\
+\textcolor{entrylight}{Host: #3} &
+\textcolor{entrylight}{\emph{#4}}
+\end{tabularx}
+\vspace{2pt}
+}
+
+% ===============================================================
+
+% Grant/award heading: title on left, date on right
+\newcommand{\grantheading}[2]{%
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}X
+    >{\raggedleft\arraybackslash}p{4.5cm}
+    @{}
+}
+\textbf{#1} & #2
+\end{tabularx}
+}
+
+% Lighter-colored bullet points
+\newenvironment{lightitems}
+{%
+  \begin{itemize}[
+      label=\textcolor{entrylight}{\textbullet},
+      leftmargin=1.3em,
+      itemsep=1pt,
+      topsep=2pt,
+      parsep=0pt
+  ]
+  \color{entrylight}
+}
+{%
+  \end{itemize}
+}
+
+% ===============================================================
+
+% Project entry:
+% #1 Project title
+% #2 Date
+% #3 Role
+% #4 Description
+\newcommand{\projectentry}[4]{%
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\raggedright\arraybackslash}X
+    >{\raggedleft\arraybackslash}p{2.5cm}
+    @{}
+}
+\textbf{#1} & #2
+\end{tabularx}
+
+#3
+
+{\color{entrylight}#4\par}
+
+\vspace{4pt}
+}
+
+% ===============================================================
+% ===============================================================
+% ===============================================================
+% Publication records checked on 24 November 2026.
+\begin{document}
+\thispagestyle{empty}
+{\fontsize{25}{28}\selectfont\sffamily\bfseries\color{navy} Vigneshwaran Krishnamurthy}\par
+\vspace{2pt}
+{\large\sffamily\color{teal}Specially Appointed Assistant Professor}\par
+{\small Astronomical Institute, Graduate School of Science, Tohoku University $\cdot$ Sendai, Japan}\par
+\vspace{4pt}
+{\small\sffamily
+\href{mailto:vignesh.krishnamurthy@astr.tohoku.ac.jp}{vignesh.krishnamurthy@astr.tohoku.ac.jp}
+\quad$\vert$\quad
+\href{https://vigneshastro.github.io/}{Website}
+\quad$\vert$\quad
+\href{https://orcid.org/0000-0003-2310-9415}{ORCID: 0000-0003-2310-9415}
+\quad$\vert$\quad
+\href{https://github.com/VigneshAstro}{GitHub}}
+\vspace{5pt}
+\color{rulegray}\hrule\color{black}
+\vspace{2pt}
+% ===============================================================
+\section{Academic Appointments}
+
+\grantheading
+{Specially Appointed Assistant Professor}
+{June 2026--present}
+\emph{Astronomical Institute, Graduate School of Science,
+Tohoku University; Sendai, Japan}
+
+{\color{entrylight}
+\vspace{-1.0mm}Research on exoplanet atmospheres, planetary-system architecture,
+and high-resolution spectroscopy.
+\par}
+
+%\vspace{4pt}
+
+\grantheading
+{Visiting Researcher}
+{January--April 2026}
+\emph{Astrobiology Center, NINS;
+Tokyo, Japan}
+
+{\color{entrylight}
+\vspace{-1.0mm}Instrumentation development and observations with a new
+high-resolution spectrograph.
+\par}
+
+%\vspace{4pt}
+
+\grantheading
+{Postdoctoral Researcher}
+{Nov 2022--April 2026}
+\emph{Trottier Space Institute, McGill University;
+Montreal, Canada}
+
+{\color{entrylight}
+\vspace{-1.0mm}Atmospheric characterization of transiting exoplanets using
+ground- and space-based telescopes.
+\par}
+
+%\vspace{4pt}
+
+
+\grantheading
+{Project Research Staff}
+{Oct 2021--Sept 2022}
+\emph{Exoplanet Search Project Office, Astrobiology Center,
+NINS; Tokyo, Japan}
+
+{\color{entrylight}
+\vspace{-1.0mm}Atmospheric characterization of young transiting planets using the
+InfraRed Doppler spectrograph on the Subaru Telescope.
+\par}
+
+
+
+% ===============================================================
+\section{Professional Development}
+
+\grantheading
+{Mini-MBA: Executive Development Course}
+{October 2025}
+\emph{Desautels Faculty of Management, McGill University}
+
+{\color{entrylight}
+\vspace{-1.0mm}Intensive executive training in leadership, strategy, and innovation
+for research and technology professionals.
+\par}
+
+%\vspace{4pt}
+
+
+\grantheading
+{International Diploma in Astrobiology}
+{March 2016}
+\emph{Indian Astrobiology Research Centre; Mumbai, India}
+
+{\color{entrylight}
+\vspace{-1.0mm}IARC International Diploma Program; Excellence Grade: A.
+\par}
+
+
+
+% ===============================================================
+\section{Education}
+
+\grantheading
+{Doctoral Research in Exoplanet Science}
+{September 2021}
+\emph{Tokyo Institute of Technology; Tokyo, Japan}
+
+{\color{entrylight}
+\vspace{-1.0mm}Thesis: \emph{Atmospheric Evolution of Low-Mass-Star Planets:
+A Tale of Evolution}.
+
+\vspace{-1.0mm}Recipient of the Monbukagakusho (MEXT) Scholarship from the
+Government of Japan.
+\par}
+
+%\vspace{4pt}
+
+
+\grantheading
+{Master's Degree in Aerospace Engineering}
+{May 2017}
+\emph{Indian Institute of Technology Kanpur, India;
+GPA: 9.0/10.0}
+
+{\color{entrylight}
+\vspace{-1.0mm}Recipient of the President Dr.\ Shankar Dayal Sharma Gold Medal.
+\par}
+
+%\vspace{4pt}
+
+
+\grantheading
+{Bachelor's Degree in Aerospace Engineering}
+{June 2015}
+\emph{Amrita Vishwa Vidyapeetham; Coimbatore, India;
+GPA: 8.58/10.0}
+% ===============================================================
+\section{Honors and Achievements}
+
+\begingroup
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{0.216}
+
+\begin{tabularx}{\textwidth}{
+    @{}
+    >{\vspace{0pt}\raggedleft\arraybackslash
+      \bfseries\color{slate}}p{1.2cm}
+    @{\hspace{0.5cm}}
+    >{\vspace{0pt}\raggedright\arraybackslash}X
+    @{}
+}
+
+2026 &
+\textbf{Canadian Space Agency JWST Cycle 4 Grant}, Montreal, Canada.
+Grant to study a multi-planet system with JWST. \\
+
+2025 &
+\textbf{Arena FIDE Master Title (AFM) in Chess}, Montreal, Canada.
+Achieved the Arena FIDE Master title in early 2025. \\
+
+2024 &
+\textbf{Private Pilot Training}, Montreal, Canada. \\
+
+2023 &
+\textbf{Canadian Transnational U1300 Chess Champion}, Montreal, Canada. \\
+
+2020 &
+Graduate Student Assistant--Program Developer (\textbf{GSA-D}),
+Tokyo Tech, Japan. \\
+
+2018 &
+\textbf{Recipient of the Monbukagakusho (MEXT) Scholarship},
+Government of Japan, Tokyo Institute of Technology, Japan. \\
+
+2017 &
+\textbf{President Shankar Dayal Sharma Gold Medal},
+Indian Institute of Technology Kanpur, India.
+Highest honor for graduate studies at IIT Kanpur. \\
+
+2016 &
+Published the novel \textit{The Forest Whisperings}
+with Partridge Publishing, Coimbatore, India. \\
+
+2016 &
+\textbf{Best Paper Award for Motivational Research},
+ICMME 2016, Shanghai, China. \\
+
+2015 &
+\textbf{Government of India Assistantship for Graduate Studies},
+Indian Institute of Technology Kanpur, India. \\
+
+2009 &
+\textbf{Honorable Mention},
+NASA Space Settlement Contest, NASA Ames Center, USA.
+
+\end{tabularx}
+\endgroup
+
+% ===============================================================
+\section{Publications}
+
+\textbf{Primary-author publications (first or second author):}
+
+\begin{itemize}
+
+\item
+\textbf{Krishnamurthy, V.}, Cowan, N. B., Fukagawa, M., \& Hirano, T. (2026),
+``Beyond five scale heights: Composition- and cloud-dependent Ariel Tier-2
+requirements for sub-Neptunes.''
+\href{https://arxiv.org/abs/2609.01577}{arXiv:2609.01577}
+[\emph{under review}].
+
+\item
+\textbf{Krishnamurthy, V.} (2026),
+``Energetic decoupling from biological scaling: A dimensionless framework
+for technological civilizations.''
+[\emph{under review in Acta Astronautica}].
+
+\item
+\textbf{Krishnamurthy, V.}, Carteret, Y., et al. (2026),
+``Continuous helium absorption from both the leading and trailing tails of WASP-107 b.''
+\href{https://doi.org/10.1038/s41550-025-02710-8}
+{\emph{Nature Astronomy}, 10, 258--270}.
+
+\item
+\textbf{Krishnamurthy, V.} \& Cowan, N. B. (2024),
+``Helium in Exoplanet Exospheres: Orbital and Stellar Influences.''
+\href{https://doi.org/10.3847/1538-3881/ad5441}
+{\emph{The Astronomical Journal}, 168, 30}.
+
+\item
+\textbf{Krishnamurthy, V.}, Hirano, T., et al. (2023),
+``Absence of extended atmospheres in low-mass star radius-gap planets GJ 9827 b, GJ 9827 d, and TOI-1235 b.''
+\href{https://doi.org/10.1093/mnras/stad404}
+{\emph{Monthly Notices of the Royal Astronomical Society}, 521, 1210--1220}.
+
+\item
+\textbf{Krishnamurthy, V.}, Hirano, T., Stefansson, G., et al. (2021),
+``Non-detection of helium in the upper atmospheres of TRAPPIST-1b, e, and f.''
+\href{https://doi.org/10.3847/1538-3881/ac0d57}
+{\emph{The Astronomical Journal}, 162, 82}.
+
+\item
+Hirano, T., \textbf{Krishnamurthy, V.}, Gaidos, E., et al. (2020),
+``Limits on the spin--orbit angle and atmospheric escape for the
+22-Myr-old planet AU Mic b.''
+\href{https://doi.org/10.3847/2041-8213/aba6eb}
+{\emph{The Astrophysical Journal Letters}, 899, L13}.
+
+\item
+\textbf{Krishnamurthy, V.}, et al. (2015),
+``Computational study of the aerodynamics of the gliding snake
+\textit{Chrysopelea paradisi}.''
+\href{https://www.academia.edu/69469489/Computational_study_of_the_aerodynamics_of_the_gliding_snake_Chrysopelea_Paradisi}
+{\emph{International Journal of Applied Engineering Research},
+10, 14476--14479}.
+
+\end{itemize}
+
+
+\textbf{Invited summary and research briefing:}
+
+\begin{itemize}
+
+\item
+\textbf{Krishnamurthy, V.} (2026),
+``JWST tracks helium escape from the atmosphere of the exoplanet WASP-107b.''
+\href{https://doi.org/10.1038/s41550-025-02722-4}
+{\emph{Nature Astronomy}, 10, 185--186 (Research Briefing)}.
+
+\end{itemize}
+
+
+\textbf{Co-authored publications:}
+
+\begin{itemize}
+
+\item
+\begin{sloppypar}
+L'Heureux, A., et al., including \textbf{Krishnamurthy, V.} (2026),
+``Radial velocity detection of the TRAPPIST-\allowbreak 1 planetary system with
+SPIRou and NIRPS.''
+\href{https://doi.org/10.1051/0004-6361/202659920}
+{\emph{Astronomy \& Astrophysics}, 714, A359}.
+\end{sloppypar}
+
+\item
+Srivastava, A., et al., including \textbf{Krishnamurthy, V.} (2026),
+``Night-sky emission correction techniques for high-resolution spectroscopy:
+Demonstration with NIRPS.''
+\href{https://doi.org/10.1051/0004-6361/202556093}
+{\emph{Astronomy \& Astrophysics}, 714, A123}.
+
+\item
+Kawauchi, K., et al., including \textbf{Krishnamurthy, V.} (2026),
+``A search for helium in the atmospheres of three sub-Neptunes and a
+super-Earth around M-dwarfs.''
+\href{https://doi.org/10.1093/pasj/psag104}
+{\emph{Publications of the Astronomical Society of Japan},
+78, 1815--1828}.
+
+\item
+Wardenier, J. P., et al., including \textbf{Krishnamurthy, V.} (2026),
+``Parametrizing the projected wind fields of ultra-hot Jupiters in
+thermal emission: An application to GCM spectra of WASP-76b.''
+\href{https://doi.org/10.1051/0004-6361/202659973}
+{\emph{Astronomy \& Astrophysics}, 713, A146}.
+
+\item
+Pelletier, S., et al., including \textbf{Krishnamurthy, V.} (2026),
+``The breaking of cold traps and onset of titanium in ultra-hot Jupiter
+atmospheres: WASP-189b in context.''
+\href{https://doi.org/10.1051/0004-6361/202659885}
+{\emph{Astronomy \& Astrophysics}, 711, A119}.
+
+\item
+Weisserman, D., et al., including \textbf{Krishnamurthy, V.} (2026),
+``Super-Earth masses and stellar abundances from NIRPS reveal tentative
+evidence for water-rich formation around M dwarfs.''
+\href{https://doi.org/10.1051/0004-6361/202558011}
+{\emph{Astronomy \& Astrophysics}, 709, A165}.
+
+\item
+Fukuda, I., et al., including \textbf{Krishnamurthy, V.} (2026),
+``The mass of TOI-1883 b: A low-density super-Neptune in the ridge regime
+transiting an early-M dwarf.''
+\href{https://doi.org/10.1093/pasj/psag084}
+{\emph{Publications of the Astronomical Society of Japan}, 78, 1602--1614}.
+
+\item
+Lamontagne, P., et al., including \textbf{Krishnamurthy, V.} (2026),
+``NIRPS tightens the mass estimate of GJ 3090 b and detects a planet near
+the stellar rotation period.''
+\href{https://doi.org/10.1051/0004-6361/202556887}
+{\emph{Astronomy \& Astrophysics}, 706, A278}.
+
+\item
+Lacedelli, G., et al., including \textbf{Krishnamurthy, V.} (2026),
+``Sibling sub-Neptunes around sibling M dwarfs: TOI-521 and TOI-912.''
+\href{https://doi.org/10.1051/0004-6361/202557304}
+{\emph{Astronomy \& Astrophysics}, 705, A260}.
+
+\item
+Allart, R., et al., including \textbf{Krishnamurthy, V.} (2025),
+``Complex structure of escaping helium spanning more than half the orbit
+of the ultra-hot Jupiter WASP-121b.''
+\href{https://doi.org/10.1038/s41467-025-66628-5}
+{\emph{Nature Communications}, 16, 10822}.
+
+\item
+Parc, L., et al., including \textbf{Krishnamurthy, V.} (2025),
+``NIRPS and TESS reveal a peculiar system around the M dwarf TOI-756:
+A transiting sub-Neptune and a cold eccentric giant.''
+\href{https://doi.org/10.1051/0004-6361/202555684}
+{\emph{Astronomy \& Astrophysics}, 702, A138}.
+
+\item
+Ikuta, K., et al., including \textbf{Krishnamurthy, V.} (2025),
+``The mass of TOI-654b: A short-period sub-Neptune transiting a
+mid-M dwarf.''
+\href{https://doi.org/10.1093/pasj/psaf090}
+{\emph{Publications of the Astronomical Society of Japan}, 77, 1101--1112}.
+
+\item
+Splinter, J., et al., including \textbf{Krishnamurthy, V.} (2025),
+``Precise constraints on the energy budget of WASP-121b from its
+JWST NIRISS/SOSS phase curve.''
+\href{https://doi.org/10.3847/1538-3881/ae0e52}
+{\emph{The Astronomical Journal}, 170, 323}.
+
+\item
+Bazinet, L., et al., including \textbf{Krishnamurthy, V.} (2025),
+``Quantifying thermal water dissociation in the dayside photosphere
+of WASP-121b using NIRPS.''
+\href{https://doi.org/10.1051/0004-6361/202553724}
+{\emph{Astronomy \& Astrophysics}, 701, A276}.
+
+\item
+Gomes da Silva, J., et al., including \textbf{Krishnamurthy, V.} (2025),
+``Blind search for activity-sensitive lines in the near-infrared using
+HARPS and NIRPS observations of Proxima and Gl 581.''
+\href{https://doi.org/10.1051/0004-6361/202555013}
+{\emph{Astronomy \& Astrophysics}, 700, A177}.
+
+\item
+Suárez Mascareño, A., et al., including
+\textbf{Krishnamurthy, V.} (2025),
+``Diving into the planetary system of Proxima with NIRPS:
+Breaking the metre-per-second barrier in the infrared.''
+\href{https://doi.org/10.1051/0004-6361/202553728}
+{\emph{Astronomy \& Astrophysics}, 700, A11}.
+
+\item
+Bouchy, F., et al., including \textbf{Krishnamurthy, V.} (2025),
+``NIRPS joining HARPS at the ESO 3.6-m telescope:
+On-sky performance and science objectives.''
+\href{https://doi.org/10.1051/0004-6361/202453341}
+{\emph{Astronomy \& Astrophysics}, 700, A10}.
+
+\item
+Vaulato, V., et al., including \textbf{Krishnamurthy, V.} (2025),
+``Hydride-ion continuum hides absorption signatures in the NIRPS
+near-infrared transmission spectrum of the ultra-hot gas giant WASP-189b.''
+\href{https://doi.org/10.1051/0004-6361/202452972}
+{\emph{Astronomy \& Astrophysics}, 700, A9}.
+
+\item
+Allart, R., et al., including \textbf{Krishnamurthy, V.} (2025),
+``NIRPS detection of delayed atmospheric escape from the warm and
+misaligned Saturn-mass exoplanet WASP-69b.''
+\href{https://doi.org/10.1051/0004-6361/202452525}
+{\emph{Astronomy \& Astrophysics}, 700, A7}.
+
+\item
+Artigau, É., et al., including \textbf{Krishnamurthy, V.} (2024),
+``NIRPS first light and early science: Breaking the 1 m\,s$^{-1}$
+radial-velocity precision barrier at infrared wavelengths.''
+\href{https://doi.org/10.1117/12.3018994}
+{\emph{Ground-based and Airborne Instrumentation for Astronomy X},
+Proc. SPIE 13096, 130960C}.
+
+\item
+Kuzuhara, M., et al., including \textbf{Krishnamurthy, V.} (2024),
+``Gliese 12b: A temperate Earth-sized planet at 12 pc ideal for
+atmospheric transmission spectroscopy.''
+\href{https://doi.org/10.3847/2041-8213/ad3642}
+{\emph{The Astrophysical Journal Letters}, 967, L21}.
+
+\item
+Kagetani, T., et al., including \textbf{Krishnamurthy, V.} (2023),
+``The mass of TOI-519 b: A close-in giant planet transiting a
+metal-rich mid-M dwarf.''
+\href{https://doi.org/10.1093/pasj/psad031}
+{\emph{Publications of the Astronomical Society of Japan}, 75, 713--721}.
+
+\item
+Hirano, T., et al., including \textbf{Krishnamurthy, V.} (2023),
+``An Earth-sized planet around an M5 dwarf star at 22 pc.''
+\href{https://doi.org/10.3847/1538-3881/acb7e1}
+{\emph{The Astronomical Journal}, 165, 131}.
+
+\item
+Morello, G., et al., including \textbf{Krishnamurthy, V.} (2023),
+``TOI-1442b and TOI-2445b: Two potentially rocky ultra-short period planets
+around M dwarfs.''
+\href{https://doi.org/10.1051/0004-6361/202243592}
+{\emph{Astronomy \& Astrophysics}, 673, A32}.
+
+\item
+Delrez, L., et al., including \textbf{Krishnamurthy, V.} (2022),
+``Two temperate super-Earths transiting a nearby late M dwarf.''
+\href{https://doi.org/10.1051/0004-6361/202244041}
+{\emph{Astronomy \& Astrophysics}, 667, A59}.
+
+\item
+Mori, M., et al., including \textbf{Krishnamurthy, V.} (2022),
+``TOI-1696: A nearby M4 dwarf with a 3\,R$_{\oplus}$ planet in the
+Neptunian desert.''
+\href{https://doi.org/10.3847/1538-3881/ac6bf8}
+{\emph{The Astronomical Journal}, 163, 298}.
+
+\item
+Kawauchi, K., et al., including \textbf{Krishnamurthy, V.} (2022),
+``Validation and atmospheric exploration of the sub-Neptune TOI-2136b
+around a nearby M3 dwarf.''
+\href{https://doi.org/10.1051/0004-6361/202243381}
+{\emph{Astronomy \& Astrophysics}, 666, A4}.
+
+\item
+Harakawa, H., et al., including \textbf{Krishnamurthy, V.} (2022),
+``A super-Earth orbiting near the inner edge of the habitable zone
+around the M4.5 dwarf Ross 508.''
+\href{https://doi.org/10.1093/pasj/psac044}
+{\emph{Publications of the Astronomical Society of Japan}, 74, 904--922}.
+
+\item
+Gaidos, E., et al., including \textbf{Krishnamurthy, V.} (2020),
+``Zodiacal exoplanets in time XI: The orbit and radiation environment
+of the young M-dwarf-hosted planet K2-25b.''
+\href{https://doi.org/10.1093/mnrasl/slaa136}
+{\emph{Monthly Notices of the Royal Astronomical Society: Letters},
+498, L119--L124}.
+
+\end{itemize}
+
+% ===============================================================
+\section{Conference Presentations}
+
+\presentationentry
+{\href{https://nibb-abc-conf70.nibb.ac.jp/home}{70th NIBB Conference / ABC International Symposium: Bridging Astronomy and Biology: Spectral Footprints of Life Beyond Earth} (oral presentation)}
+{Okazaki, Japan}
+{Energetic Decoupling from Biological Scaling: A Dimensionless Framework for Technological Civilizations}
+{11 November 2026}
+
+\presentationentry
+{HWO Japan Science Workshop 2 (presentation)}
+{JAXA, Sagamihara}
+{Atmosphere and escape in the HWO era: What JWST is teaching us}
+{July 2026}
+
+\presentationentry
+{Exoplanets VI (presentation)}
+{Porto, Portugal}
+{Know thy Star, know thy Planet: Probing TLSE in a M-star}
+{June-July 2026}
+
+\presentationentry
+{Cool Stars 23 (poster)}
+{Tokyo, Japan}
+{Exploring TLSE in a M-star}
+{June 2026}
+
+\presentationentry
+{NIRPS Science Meeting (presentation)}
+{Geneva, Switzerland}
+{Young planets with escaping atmospheres}
+{November 2025}
+
+\presentationentry
+{CRAQ Annual Meeting 2025 (presentation)}
+{Quebec, Canada}
+{NIRISS/SOSS observations of WASP-107b}
+{May 2025}
+
+\presentationentry
+{Two HoRSEs (poster)}
+{Berlin, Germany}
+{Atmosphere of the young Neptune DS Tuc Ab}
+{July 2024}
+
+\presentationentry
+{CRAQ Annual Meeting 2024 (flash presentation)}
+{Quebec, Canada}
+{Atmospheres of young planets}
+{May 2024}
+
+\presentationentry
+{NIRPS Science Meeting (presentation)}
+{Montreal, Canada}
+{Atmospheres of young planets}
+{April 2024}
+
+\presentationentry
+{NIRPS Science Meeting (presentation)}
+{Montreal, Canada}
+{Search for helium in NIRPS targets}
+{October 2023}
+
+\presentationentry
+{Exoclimes VI (poster)}
+{Exeter, UK}
+{Near-infrared observations of transiting-planet atmospheres}
+{June 2023}
+
+\presentationentry
+{CRAQ Annual Meeting 2023 (presentation)}
+{Quebec, Canada}
+{Atmospheres of radius-gap planets}
+{May 2023}
+
+\presentationentry
+{Japan Geoscience Union Meeting 2022 (presentation)}
+{Online}
+{Atmospheres of low-mass-star planets: Atmospheric escape and beyond}
+{May 2022}
+
+\presentationentry
+{Exoplanets IV, AASTCS 9 (poster)}
+{Las Vegas, USA}
+{Near-infrared observations of TOI-1235b, GJ 9827b, and GJ 9827d}
+{May 2022}
+
+\presentationentry
+{53\textsuperscript{rd} Annual Meeting of the Division for Planetary Sciences (iPoster)}
+{Online}
+{High-resolution near-infrared observations of the TRAPPIST-1 planets}
+{October 2021}
+
+\presentationentry
+{Subaru Users Meeting FY2020 (poster)}
+{Online}
+{Characterization of sub-Neptune and rocky-planet atmospheres with near-infrared spectroscopy}
+{March 2021}
+
+\presentationentry
+{Rocky Planets in the Era of JWST: Theory and Observation (poster)}
+{NASA GSFC, USA}
+{Exploring the infrared helium line for atmospheric characterization}
+{November 2019}
+
+\presentationentry
+{Workshop on TESS Follow-up Obs. for Exoplanet (presentation)}
+{Busan, South Korea}
+{New observational results from IRD spectrograph on Subaru Telescope}
+{October 2019}
+
+\presentationentry
+{Tokyo Planetary Seminar (presentation)}
+{JAXA, Tanegashima}
+{New observational results from IRD spectrograph on Subaru Telescope}
+{September 2019}
+
+\presentationentry
+{TIEC Research and Presentation 2019--2020 (presentation)}
+{Tokyo, Japan}
+{Ground-based observations of terrestrial exoplanet systems}
+{April 2019}
+
+\presentationentry
+{TIEC Research and Presentation 2018--2019 (poster)}
+{Tokyo, Japan}
+{Current developments in ground-based exoplanet observations}
+{November 2018}
+
+\presentationentry
+{AIAA Oklahoma Symposium (presentation)}
+{Edmond, OK, USA}
+{Metamaterial-inspired smart composites for space applications}
+{April 2018}
+
+\presentationentry
+{6\textsuperscript{th} ELSI International Symposium (poster)}
+{Tokyo, Japan}
+{Concept of a sustainable habitat on Mars}
+{January 2018}
+
+\presentationentry
+{Master's Thesis Defense (presentation)}
+{Kanpur, India}
+{Modeling the elasto-plastic behavior of aluminum alloys using micro- and damage mechanics}
+{May 2017}
+
+\presentationentry
+{3\textsuperscript{rd} International Conference on Mechanical Engineering (presentation)}
+{Shanghai, China}
+{MC-DSMC solver for an optimized space-crew re-entry orbital vehicle}
+{October 2016}
+
+\presentationentry
+{Bachelor's Thesis Defense (presentation)}
+{Coimbatore, India}
+{Monte Carlo simulations for re-entry vehicles}
+{June 2015}
+
+
+% ===============================================================
+\section{Invited Talks and Colloquia}
+
+\invitedtalkentry
+{Astronomy Colloquium, Tohoku University}
+{Sendai, Japan}
+{Dr.\ Misato Fukagawa}
+{July 2026}
+
+\invitedtalkentry
+{Sato Laboratory, Institute of Science Tokyo}
+{Tokyo, Japan}
+{Dr.\ Bun'ei Sato}
+{April 2026}
+
+\invitedtalkentry
+{Young Transiting Planet Workshop 2026}
+{Okinawa, Japan}
+{Dr.\ Norio Narita}
+{March 2026}
+
+\invitedtalkentry
+{Astrobiology Center, National Astronomical Observatory of Japan}
+{Tokyo, Japan}
+{Dr.\ Teruyuki Hirano}
+{February 2026}
+
+\invitedtalkentry
+{Department of Astronomy \& Astrophysics, TIFR}
+{Mumbai, India}
+{Dr.\ Joe P. Ninan}
+{December 2025}
+
+\invitedtalkentry
+{Inter-University Centre for Astronomy and Astrophysics}
+{Pune, India}
+{Dr.\ R. Srianand and Dr.\ Anupam Bhardwaj}
+{December 2025}
+
+\invitedtalkentry
+{Department of SPASE, IIT Kanpur}
+{Kanpur, India}
+{Dr.\ Prashant Pathak}
+{August 2025}
+
+\invitedtalkentry
+{Department of Earth \& Space Sciences, IIST}
+{Thiruvandrum, India}
+{Dr.\ Anand Narayanan}
+{July 2025}
+
+\invitedtalkentry
+{Center for Astrophysics | Harvard \& Smithsonian}
+{Boston, USA}
+{Dr.\ Dave Charbonneau}
+{October 2024}
+
+\invitedtalkentry
+{RIKEN}
+{Saitama, Japan}
+{Dr.\ Nami Sakai and Dr.\ Yui Kawashima}
+{January 2024}
+
+\invitedtalkentry
+{Amrita Vishwa Vidyapeetham}
+{Coimbatore, India}
+{Dr.\ S. Mahadevan and Dr.\ Bharat Kishore Sharma}
+{January 2024}
+
+\invitedtalkentry
+{Indian Institute of Astrophysics}
+{Bengaluru, India}
+{Dr.\ Sujan Sengupta and Dr.\ Piyali Chatterjee}
+{January 2024}
+
+\invitedtalkentry
+{Astrobiology Center, National Astronomical Observatory of Japan}
+{Tokyo, Japan}
+{Dr.\ Teruyuki Hirano}
+{May 2022}
+
+% ===============================================================
+\section{Grants and Awards}
+
+\grantheading
+{Canadian Space Agency -- JWST Cycle 4 Grant}
+{2025--present}
+Project: Probing Stellar Behavior and Planetary Diversity in K2-384 \vspace{-1.5mm}
+\begin{lightitems}
+\item
+Canadian Space Agency grant supporting our JWST DDT program in Cycle 4.
+\item
+The CAD 60,000 grant supports in the publications and conference participation.
+\end{lightitems}
+
+
+\grantheading
+{Clark Science Executive Leadership Fund (Clark-SELF)}
+{2025}
+McGill University \vspace{-1.5mm}
+\begin{lightitems}
+\item
+Recipient of the Clark-SELF award for executive MBA-level leadership
+training.
+\item
+The CAD 7,000 award supported participation in the Mini-MBA Executive
+Development Program.
+\end{lightitems}
+
+
+\grantheading
+{NASA SEEC Grant}
+{2020--2022}
+Role: Collaborator; PI: Ravi Kopparapu, NASA Goddard Space Flight Center, USA \vspace{-1.5mm}
+\begin{lightitems}
+\item
+Simulated transmission spectra of atomic helium as a tracer of
+atmospheric escape.
+\item
+The USD 100,000 grant supported the development of helium models.
+\end{lightitems}
+
+
+\grantheading
+{Monbukagakusho (MEXT) Scholarship for Doctoral Studies}
+{2018--2021}
+Ministry of Education, Culture, Sports, Science and Technology,
+Government of Japan \vspace{-1.5mm}
+\begin{lightitems}
+\item
+Scholarship supporting doctoral studies in exoplanet atmospheres at
+the Tokyo Tech, Japan.
+\item
+The scholarship provided JPY 6,090,000 over 3.5 years.
+\end{lightitems}
+
+
+\grantheading
+{GATE Stipend for Master's Studies}
+{2015--2017}
+All India Council for Technical Education scholarship,
+Government of India \vspace{-1.5mm}
+\begin{lightitems}
+\item
+Scholarship supporting master's studies in aerospace engineering at
+the IIT Kanpur, India.
+\item
+The scholarship provided INR 300,000 over two years.
+
+\end{lightitems}
+
+
+% ===============================================================
+
+\section{Current and Past Projects}
+
+\projectentry
+{Atmospheric and Orbital Architecture of Close-in Packed Planetary Systems}
+{2023--present}
+{\vspace{-1mm}Role: Principal Investigator}
+{\vspace{-1.5mm}Investigating the atmospheres and orbital architectures of compact,
+close-in multiplanet systems. Systems such as TRAPPIST-1 and K2-384,
+which contain several planets in or near orbital resonances, provide
+valuable insights into planetary formation and evolutionary pathways.}
+
+
+\projectentry
+{NIRPS -- Search for Blue Planets Around Red Stars}
+{2022--present}
+{\vspace{-1mm}Role: Instrument and Guaranteed Time Observations team member}
+{\vspace{-1.5mm}Member of the NIRPS instrument team and observer since 2022.
+The project focuses on transit observations of young planets orbiting
+red dwarfs using the Near Infra-Red Planet Searcher on the ESO 3.6-m
+telescope at La Silla Observatory, Chile.}
+
+
+\projectentry
+{Subaru Strategic Program -- InfraRed Doppler Spectrograph}
+{2019--2024}
+{\vspace{-1mm}Role: Co-investigator; PI: Bun'ei Sato}
+{\vspace{-1.5mm}Member of the Subaru Strategic Program team since 2019. The program
+focuses on discovering Earth-mass planets in the habitable zones of
+mid-to-late M dwarfs and determining the distribution of planets around
+cool stars. The program comprises 175 observing nights over five years
+with the high-resolution IRD spectrograph on the 8.2-m Subaru Telescope.
+My work focuses on stellar characterization using the He\,I triplet at
+1083~nm.}
+
+
+\projectentry
+{Simulating Transit Spectra of Atomic Helium as a Tracer of Escape}
+{2020--2022}
+{\vspace{-1mm}Role: Collaborator; PI: Ravi Kopparapu}
+{\vspace{-1.5mm}The project updated a 3D upper-atmosphere model to
+calculate atmospheric escape rates and predict transmission spectra for
+transiting exoplanets around a range of stellar types. The model
+incorporated atomic absorption lines, particularly the metastable
+helium triplet at 10833~\AA, which traces the upper-atmospheric region
+from approximately $\mu$bar to nbar where escape
+is launched.}
+
+
+\projectentry
+{IRD General Observing Programs}
+{2019--2022}
+{\vspace{-1mm}Role: Principal Investigator and Co-investigator}
+{\vspace{-1.5mm}Secured more than 20 hours of Subaru Telescope time as Principal
+Investigator, in addition to several observing nights as a
+Co-investigator, using the IRD spectrograph to investigate
+photoevaporation in sub-Neptunes. The programs resulted in more than
+three peer-reviewed publications.}
+
+% ===============================================================
+\section{Research Supervision}
+
+\grantheading
+{Graduate Supervision, IIST}
+{2025--2026}
+\emph{Co-supervisor for Arya Raj with Prof.\ Anand Narayanan and Prof.\ Mathew}
+
+Project: Feasibility of detecting oxygen with the Thirty Meter Telescope
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Simulated the atmosphere of a habitable-zone Earth-like planet orbiting
+a Sun-like star.
+\item
+Assessed oxygen detectability using high-resolution cross-correlation
+spectroscopy.
+\end{lightitems}
+
+
+\grantheading
+{Graduate Supervision, Université de Montréal}
+{2024--2026}
+\emph{Co-supervisor for Mathis Bouffard with Prof.\ René Doyon and
+Prof.\ Nicolas Cowan}
+
+Project: High-resolution transit spectroscopy of the TRAPPIST-1 planets
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Expanded Mathis's undergraduate research to include the
+complete TRAPPIST-1 planetary system.
+\item
+Analyzed transit observations obtained with CFHT/SPIRou and Subaru/IRD.
+\end{lightitems}
+
+
+\grantheading
+{Undergraduate Supervision, University of British Columbia}
+{2025--2026}
+\emph{Co-supervisor for Sean Collins with Prof.\ Michelle Kunimoto}
+
+Project: Confirmation of a TESS planet candidate
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Analyzed TESS observations and ground-based photometry to confirm a
+TESS Object of Interest.
+\item
+Supported the preparation of radial-velocity observations with a
+high-resolution spectrograph.
+\end{lightitems}
+
+
+\grantheading
+{Undergraduate Supervision, Amrita Vishwa Vidyapeetham}
+{2024--2026}
+\emph{Supervisor for Anusha and Ashfaq Ali (non-thesis research)}
+
+Project: Transit-timing variation analysis of a multiplanet M-dwarf system
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Investigated a multiplanet system around a M dwarf to constrain
+planetary masses using TTVs.
+\item
+Combined Kepler, TESS, and ground-based photometry to measure the
+transit-timing variations.
+\end{lightitems}
+
+
+\grantheading
+{Undergraduate Honors Research Thesis, McGill University}
+{2023--2024}
+\emph{Co-supervisor for Mathis Bouffard and Maddy Walkington with
+Prof.\ Nicolas Cowan}
+
+Project: High-resolution transit spectroscopy of TRAPPIST-1b
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Co-supervised the analysis of CFHT/SPIRou transit spectroscopy of
+TRAPPIST-1b.
+\item
+The research was presented at the Emerging Researchers in Exoplanet
+Science Symposium IX at Cornell University, Ithaca, New York, in
+July 2024.
+\end{lightitems}
+
+% ===============================================================
+\section{Technical and Professional Skills}
+
+\textbf{\color{navy}Software and GitHub Packages}
+\hfill
+\href{https://github.com/VigneshAstro}{GitHub: VigneshAstro}
+
+\grantheading
+{HELIX -- Helium Exoplanet Literature Investigation Xtractor}
+{2024}
+\emph{Python wrapper for extracting helium-related papers from arXiv}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Developed HELIX, a Python wrapper for efficiently extracting research papers from arXiv.
+\item
+Created an accompanying Jupyter notebook with instructions for
+customizing search terms and extracting literature related to other
+atmospheric species, including hydrogen and water.
+\end{lightitems}
+
+
+\grantheading
+{Signal-to-Noise Ratio Simulator for NIRPS and HARPS}
+{2023}
+\emph{Exposure-time and signal-to-noise simulator for HARPS and NIRPS}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Developed a signal-to-noise ratio simulator for the HARPS and NIRPS
+spectrographs on the ESO 3.6-m telescope at La Silla Observatory, Chile.
+\item
+Improved the ETC and implemented planetary velocity-smearing models for transit observations.
+\end{lightitems}
+
+
+\textbf{\color{navy}Observational Experience}
+
+\grantheading
+{Support Astronomer: ESO 3.6-m Telescope}
+{2022--present}
+\emph{Instruments: NIRPS and HARPS}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Member of the NIRPS instrument and Guaranteed Time Observations team,
+focusing on the atmospheric characterization of transiting exoplanets.
+\item
+Provided on-site observing support at ESO's La Silla Observatory and
+participated in remote observations for the NIRPS GTO program.
+\end{lightitems}
+
+
+\grantheading
+{Support Astronomer: Subaru Telescope}
+{2020--2022}
+\emph{Instrument: InfraRed Doppler spectrograph}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Worked as a support astronomer for the IRD spectrograph on the Subaru Telescope at Hawaii.
+\item
+Served as a remote observer for the Subaru Strategic Program from the NAOJ Office in Mitaka.
+\end{lightitems}
+
+
+\textbf{\color{navy}Peer Review}
+
+\grantheading
+{Reviewer for Peer-Reviewed Journals}
+{2021--present}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}American Astronomical Society journals:
+\emph{The AJ},
+\emph{The ApJ}, and
+\emph{The ApJL}.
+\item
+\emph{Monthly Notices of the Royal Astronomical Society}.
+\item
+Nature Portfolio journals, including
+\emph{Nature} and \emph{Nature Astronomy}.
+\end{lightitems}
+
+% ===============================================================
+\section{Professional Service and Committees}
+
+\grantheading
+{\href{https://exoclimes.org/}{Exoclimes VII and ExoSlam}}
+{2025}
+\emph{Local Organizing Committee and Summer School Organizer;
+Montreal, Canada}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Served on the Local Organizing Committee for the seventh edition of
+the Exoclimes conference.
+\item
+Contributed to the organization and delivery of ExoSlam, a summer
+school designed for graduate students and early-career researchers.
+\end{lightitems}
+
+
+\grantheading
+{Gemini Strategic Science Plan Working Group}
+%{September--November 2024}
+{2024}
+\emph{Exoplanet Representative; online}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Appointed to the working group responsible for drafting recommendations for the Gemini Board of Directors and shaping the observatory's strategic plan for the 2030s.
+\item
+Represented the priorities and perspectives of the exoplanet and Canadian astronomical communities.
+\end{lightitems}
+
+
+\grantheading
+{\href{https://sites.google.com/view/two-horses/}{Two HoRSEs}}
+{July 2024}
+\emph{Local Organizing Committee; Berlin, Germany}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Served on the Local Organizing Committee for the second edition of
+\emph{High-Resolution Exoplanet and Stellar Characterization Today and
+in the ELT Era}.
+\item
+Supported the Scientific Organizing Committee with conference
+operations, participant coordination, and logistics.
+\end{lightitems}
+
+
+\grantheading
+{Trottier Space Institute Seminar Coordinator}
+{2023--2024}
+\emph{Trottier Space Institute, McGill University; Montreal, Canada}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Coordinated institute seminars and hosted visiting researchers working
+across astronomy, astrophysics, and cosmology.
+\end{lightitems}
+
+% ===============================================================
+\section{Media and Interviews}
+
+A complete archive of interviews and media coverage is available
+\href{https://vigneshastro.github.io/media/} {here}.
+
+\grantheading
+{WASP-107b -- Extended Helium Tail}
+{2025}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}BBC Tamil:
+\href{https://www.bbc.com/tamil/articles/c0jven4j0ngo}
+{Extensive helium tail around WASP-107b} and
+\href{https://www.bbc.com/tamil/articles/c4gr40qw53xo}
+{interview with Dr. Krishnamurthy}.
+\item
+McGill University:
+\href{https://www.mcgill.ca/newsroom/channels/news/exoplanet-observed-shedding-its-atmosphere-real-time-369356}
+{Exoplanet observed shedding its atmosphere in real time}.
+\item
+Trottier Institute for Research on Exoplanets:
+\href{https://exoplanetes.umontreal.ca/en/exoplanet-caught-shedding-its-atmosphere-in-real-time/}
+{Exoplanet shedding its atmosphere in real time}.
+\item
+Science Springs:
+\href{https://sciencesprings.wordpress.com/2025/12/02/from-the-university-of-chicago-and-mcgill-university-universite-mcgill-ca-and-webb-exoplanet-is-observed-shedding-its-atmosphere-in-real-time/}
+{Exoplanet observed shedding its atmosphere in real time}.
+\item
+Space.com:
+\href{https://www.space.com/astronomy/james-webb-space-telescope/giant-helium-cloud-caught-escaping-from-puffy-exoplanet-by-jwst}
+{A ``super-puff'' exoplanet is losing its atmosphere, and JWST had a look}.
+\item
+MyScience:
+\href{https://www.myscience.org/en/news/2025/exoplanet_is_observed_shedding_its_atmosphere_in_real_time-2025-mcgill}
+{Exoplanet observed shedding its atmosphere in real time}.
+\item
+Time.news:
+\href{https://time.news/helium-leaks-from-exoplanet-wasp-107b-webb-telescope-discovery/}
+{Helium leaks from exoplanet WASP-107b}.
+\item
+Mirage News:
+\href{https://www.miragenews.com/exoplanet-spotted-shedding-atmosphere-live-1580797/}
+{Exoplanet spotted shedding its atmosphere in real time}.
+\item
+ScienMag:
+\href{https://scienmag.com/helium-absorption-detected-in-wasp-107bs-tails/}
+{Helium absorption detected in WASP-107b's tails}.
+\end{lightitems}
+
+
+\grantheading
+{Gliese 12b -- Discovery}
+{July--August 2024}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}The Conversation:
+\href{https://theconversation.com/the-discovery-of-a-new-earth-like-planet-could-shed-further-light-on-what-makes-a-planet-habitable-234127}
+{The discovery of a new Earth-like planet could shed further light on
+what makes a planet habitable}.
+\item
+Puthiya Thalaimurai:
+\href{https://www.puthiyathalaimurai.com/technology/a-planet-like-earth-has-surprised-scientists}
+{Discovery of a potentially habitable-zone exoplanet}.
+\item
+Puthiya Thalaimurai:
+\href{https://youtu.be/AXB-5W64Iac}
+{Video report on the discovery of Gliese 12b}.
+\item
+Trottier Institute for Research on Exoplanets:
+\href{https://exoplanetes.umontreal.ca/en/discovery-of-an-earth-like-exoplanet-in-the-habitable-zone-interview-with-vigneshwaran-krishnamurthy/}
+{Discovery of an Earth-sized exoplanet in the habitable zone:
+Interview with Dr. Krishnamurthy}.
+\item
+McGill University:
+\href{https://www.mcgill.ca/newsroom/channels/news/expert-discovery-new-earth-planet-could-shed-light-what-makes-planet-habitable-358213}
+{Discovery of a new Earth-like planet could shed light on what makes
+a planet habitable}.
+\end{lightitems}
+
+\grantheading
+{\href{https://www.puthiyathalaimurai.com/technology/james-webb-telescope-invented-a-new-emerging-solar-family}
+{New Star Formation Observed with JWST}}
+{November 2023}
+\emph{Contributor; Puthiya Thalaimurai; author: Jayashree; language: Tamil}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Contributed scientific context for an article about the formation of
+the protostar HH 212 as observed with JWST.
+\end{lightitems}
+
+\grantheading
+{\href{https://www.puthiyathalaimurai.com/technology/surprising-discovery-of-3-planets-like-earth-in-trappist1-family}
+{TRAPPIST-1 in the Modern Era of Astronomy}}
+{November 2023}
+\emph{Contributor; Puthiya Thalaimurai; author: Jayashree; language: Tamil}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Contributed to a review of the TRAPPIST-1 system and current knowledge
+of its planetary architecture and atmospheres.
+\end{lightitems}
+
+\grantheading
+{\href{https://www.puthiyathalaimurai.com/technology/what-causes-solar-storms-in-sun}
+{What Is a Solar Storm?}}
+{August 2023}
+\emph{Contributor; Puthiya Thalaimurai; author: Jayashree; language: Tamil}
+
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Explained solar energy production, the physical origin of solar storms,
+and the role of ISRO's Aditya-L1 spacecraft in monitoring the Sun.
+\end{lightitems}
+
+
+% ===============================================================
+\section{Additional Professional Experience and Outreach}
+
+
+\grantheading
+{Market Research Analyst}
+{2024--2025}
+\emph{GLiN Corporation, Japan}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Conducted market research for projects involving India and North
+America.
+\item
+Collected and analyzed data and prepared recommendations based on
+market trends and client requirements.
+\end{lightitems}
+
+\grantheading
+{Public Science Outreach}
+{2023--2025}
+\emph{Trottier Space Institute, Montreal, Canada}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Contributed to public astronomy and science outreach activities as a
+member of the Trottier Space Institute outreach team.
+\end{lightitems}
+
+\grantheading
+{SHAD Canada Recruiter}
+{September 2023--2025}
+\emph{Montreal, Canada}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Promoted experiential education and youth development programs to
+high-school students and encouraged participation in SHAD Canada's
+summer programs.
+\end{lightitems}
+
+\grantheading
+{Part-Time Science Teacher}
+{March--September 2021}
+\emph{RED Program, Musashi High School, Tokyo, Japan}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Taught a range of science subjects in English to Japanese high-school
+students.
+\end{lightitems}
+
+\grantheading
+{Data Analyst Intern}
+{Dec 2020--June 2021}
+\emph{Data Visualization Laboratory, Tokyo, Japan}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Developed visual representations of astronomical data for public
+education and science-outreach projects.
+\end{lightitems}
+
+\grantheading
+{Part-Time English Teacher}
+{Nov2020--Sept 2021}
+\emph{Tokyo Global Gateway, Tokyo, Japan}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Taught more than 500 elementary-, middle-, and high-school students
+from Tokyo and the surrounding region.
+\end{lightitems}
+
+\grantheading
+{Teaching Assistant}
+{July--September 2020}
+\emph{Tokyo Institute of Technology, Tokyo, Japan}
+\emph{Instructors: Prof.\ Kumara, Prof.\ Stacey Doremus,
+Prof.\ Eri Ota, and Prof.\ Rie Murakami}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Supported the collaborative Georgia Tech--Tokyo Tech problem-based
+learning courses.
+\end{lightitems}
+
+\grantheading
+{Content Creator -- edX}
+{2019--2021}
+\emph{Center for Innovative Teaching and Learning,
+Tokyo Institute of Technology}
+\emph{Supervisors: Prof.\ Jeffrey S. Cross and Prof.\ Nagahama}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Served as a Graduate Student Assistant--Program Developer and
+contributed to the development of online courses for edX.
+\end{lightitems}
+
+\grantheading
+{President}
+{Aug 2019--Aug 2020}
+{\color{entrylight}
+Indian Students' Association of Tokyo Tech.
+\par}
+
+\grantheading
+{Distribution Manager}
+{Sept 2017--Sept 2019}
+{\color{entrylight}
+Habitable Press, a publishing imprint focused on Earth, space, and
+the future.
+\par}
+
+\grantheading
+{Research Intern}
+{May 2017--April 2018}
+{\color{entrylight}
+Blue Marble Space Institute of Science, USA.
+\par}
+
+\grantheading
+{Teaching Assistant}
+{January 2016--June 2017}
+\emph{Indian Institute of Technology Kanpur, India}
+
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Conducted tutorial sessions and supported instruction in Engineering
+Graphics and Aerospace Structural Analysis~I.
+\end{lightitems}
+
+
+\grantheading
+{President -- Astronomy Club}
+{June 2013--May 2014}
+\emph{Amrita Vishwa Vidyapeetham, India}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Organized and conducted night-sky observing sessions near Coimbatore,
+India.
+\end{lightitems}
+
+
+\grantheading
+{Science Outreach Program}
+{January 2012--May 2015}
+\begin{lightitems}
+\item
+\vspace{-1.5mm}Encouraged students from multiple districts across Tamil Nadu to
+pursue education and careers in science.
+\end{lightitems}
+
+\end{document}

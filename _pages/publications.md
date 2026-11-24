@@ -9,7 +9,7 @@ nav_order: 3
 
 <!-- _pages/publications.md -->
 
-Only first-author manuscripts appear under review. Other manuscripts under review appear in the nth-author section. Publications are organized by review and authorship status, with the most recent work first in each section. Links to NASA ADS, arXiv, and the DOI or publisher page appear below each citation. For a continuously updated record, see
+Updated **24 November 2026**. Publications are organized by publication type and authorship, with recent work first. Links to NASA ADS, arXiv, and the DOI or publisher page appear below each citation. For a continuously updated record, see
 [NASA ADS](https://ui.adsabs.harvard.edu/search/q=author%3A%22Krishnamurthy%2C%20Vigneshwaran%22&sort=date%20desc%2C%20bibcode%20desc&p_=0) or
 [Google Scholar](https://scholar.google.com/citations?user=7xSicYwAAAAJ).
 
@@ -31,11 +31,31 @@ Only first-author manuscripts appear under review. Other manuscripts under revie
 
 {% bibliography --query @*[section=briefing] %}
 
-<h2 style="font-size: 1.65rem; font-weight: 700; margin-top: 2.5rem;">Nth-author publications</h2>
+<h2 style="font-size: 1.65rem; font-weight: 700; margin-top: 2.5rem;">Co-authored publications</h2>
 
 {% bibliography --query @*[section=coauthored] %}
 
+<h2 style="font-size: 1.65rem; font-weight: 700; margin-top: 2.5rem;">Conference proceedings</h2>
+
+{% bibliography --query @*[section=proceedings] %}
+
 </div>
+
+## Recent conference presentation
+
+**[The 70th NIBB Conference / ABC International Symposium](https://nibb-abc-conf70.nibb.ac.jp/home)**<br>
+_Bridging Astronomy and Biology: Spectral Footprints of Life Beyond Earth_<br>
+**Energetic Decoupling from Biological Scaling: A Dimensionless Framework for Technological Civilizations**<br>
+Vigneshwaran Krishnamurthy · Oral presentation · Okazaki, Japan · 11 November 2026
+
+The complete list of conference presentations and invited talks is included in the downloadable publication lists and [CV](/cv/).
+
+## Download publications and presentations
+
+| Color scheme    | PDF                                                      | LaTeX source                                               |
+| :-------------- | :------------------------------------------------------- | :--------------------------------------------------------- |
+| Blue            | [PDF](/assets/pdf/publications_blue_24nov2026.pdf)       | [LaTeX](/assets/tex/publications_blue_24nov2026.tex)       |
+| Brown and green | [PDF](/assets/pdf/publications_greenbrown_24nov2026.pdf) | [LaTeX](/assets/tex/publications_greenbrown_24nov2026.tex) |
 
 <script>
   (() => {
